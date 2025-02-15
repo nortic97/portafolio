@@ -1,35 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2c3e50;">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0D1117;">
   <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand" routerLink="/home">David Nova</a>
-
-    <!-- Botón para móviles -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <a class="navbar-brand" routerLink="/home" fragment="home">David Nova</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Menú de navegación -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active">Inicio</a>
+          <a class="nav-link" [class.active]="activeSection === 'home'" routerLink="/home" fragment="home">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/projects" routerLinkActive="active">Proyectos</a>
+          <a class="nav-link" [class.active]="activeSection === 'about'" routerLink="/home" fragment="about">Sobre mí</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about" routerLinkActive="active">Sobre mí</a>
+          <a class="nav-link" [class.active]="activeSection === 'projects'" routerLink="/home" fragment="projects">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contacto</a>
+          <a class="nav-link" [class.active]="activeSection === 'contact'" routerLink="/home" fragment="contact">Contacto</a>
         </li>
       </ul>
     </div>

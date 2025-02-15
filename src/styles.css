@@ -1,3 +1,15 @@
 body{
   background-color: #1A1A2E !important;
+  overflow: auto !important;
+  -ms-overflow-style: none !important;
 }
+
+html {
+  scroll-behavior: smooth !important;
+  scrollbar-width: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+

@@ -1,4 +1,4 @@
-<section class="home d-flex align-items-center" data-aos="fade-up">
+<section class="home d-flex align-items-center" data-aos="fade-up" id="home">
   <div class="container">
     <div class="row align-items-center">
       <!-- Texto -->
@@ -6,8 +6,8 @@
         <h1 class="home-title">¡Hola! Soy David Nova</h1>
         <p class="home-subtitle">Desarrollador Full Stack apasionado por crear soluciones innovadoras y escalables.</p>
         <div class="home-actions">
-          <a routerLink="/projects" class="btn btn-primary me-3">Ver mis proyectos</a>
-          <a routerLink="/contact" class="btn btn-outline-primary">Contáctame</a>
+          <a routerLink="/home" fragment="projects" class="btn btn-primary me-3">Ver mis proyectos</a>
+          <a routerLink="/home" fragment="contact" class="btn btn-outline-primary">Contáctame</a>
         </div>
       </div>
 
@@ -19,3 +19,20 @@
     </div>
   </div>
 </section>
+
+<section id="about">
+  <app-about-me></app-about-me>
+</section>
+
+<section id="projects">
+  <app-project-list></app-project-list>
+</section>
+
+<section id="contact">
+  <app-contact-form></app-contact-form>
+</section>
+
+<div class="scroll-indicator" #scrollIndicator>
+  <span class="scroll-text">Scroll</span>
+  <i class="fa-solid fa-chevron-down"></i>
+</div>
