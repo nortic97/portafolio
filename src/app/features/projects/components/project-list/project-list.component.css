@@ -1,0 +1,125 @@
+.projects {
+  padding: 4rem 0 !important;
+  background-color: #1A1A2E !important;
+}
+
+.projects-title {
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  color: #FFFFFF !important;
+  margin-bottom: 2rem !important;
+  text-align: center !important;
+}
+
+.projects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+.project-card {
+  background-color: #16213E !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+.project-image {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+}
+
+.project-content {
+  padding: 1.5rem !important;
+}
+
+.project-title {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  color: #FFFFFF !important;
+  margin-bottom: 1rem !important;
+}
+
+.project-description {
+  font-size: 1rem !important;
+  color: #A8A8A8 !important;
+  margin-bottom: 1rem !important;
+}
+
+.project-technologies {
+  list-style-type: none !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.project-technologies li {
+  background-color: #007BFF !important;
+  color: #FFFFFF !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 20px !important;
+  font-size: 0.875rem !important;
+}
+
+.project-links {
+  display: flex !important;
+  gap: 1rem !important;
+}
+
+.btn-primary {
+  background-color: #007BFF !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 1rem !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent !important;
+  border: 2px solid #007BFF !important;
+  color: #007BFF !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 1rem !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007BFF !important;
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2rem !important;
+  }
+
+  .project-title {
+    font-size: 1.25rem !important;
+  }
+
+  .project-description {
+    font-size: 0.875rem !important;
+  }
+
+  .project-links {
+    flex-direction: column !important;
+  }
+}
