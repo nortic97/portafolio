@@ -1,0 +1,129 @@
+.experience {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.experience-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #FE4300, #FF6B35);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.experience-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.experience-content {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E2E8F0;
+  transition: all 0.3s ease;
+}
+
+.experience-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(254, 67, 0, 0.15);
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-role {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  color: #FE4300;
+  font-weight: 600;
+}
+
+.experience-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  color: #64748B;
+  font-size: 0.95rem;
+}
+
+.experience-date,
+.experience-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(254, 67, 0, 0.1);
+  color: #FE4300;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(254, 67, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(254, 67, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 4rem 0;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-role {
+    font-size: 1.25rem;
+  }
+
+  .experience-company {
+    font-size: 1rem;
+  }
+
+  .experience-content {
+    padding: 1.5rem;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
