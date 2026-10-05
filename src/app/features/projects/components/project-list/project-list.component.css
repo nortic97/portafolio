@@ -1,125 +1,161 @@
 .projects {
-  padding: 4rem 0 !important;
-  background-color: #1A1A2E !important;
+  padding: 4rem 0;
+  background-color: #1A1A2E;
 }
 
 .projects-title {
-  font-size: 2.5rem !important;
-  font-weight: bold !important;
-  color: #FFFFFF !important;
-  margin-bottom: 2rem !important;
-  text-align: center !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .projects-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-  gap: 2rem !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
-  background-color: #16213E !important;
-  border-radius: 10px !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  background-color: #16213E;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px) !important;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {
-  width: 100% !important;
-  height: 200px !important;
-  object-fit: cover !important;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .project-content {
-  padding: 1.5rem !important;
+  padding: 1.5rem;
 }
 
 .project-title {
-  font-size: 1.5rem !important;
-  font-weight: bold !important;
-  color: #FFFFFF !important;
-  margin-bottom: 1rem !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 .project-description {
-  font-size: 1rem !important;
-  color: #A8A8A8 !important;
-  margin-bottom: 1rem !important;
+  font-size: 1rem;
+  color: #A8A8A8;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .project-technologies {
-  list-style-type: none !important;
-  padding: 0 !important;
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 0.5rem !important;
-  margin-bottom: 1.5rem !important;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-technologies li {
-  background-color: #007BFF !important;
-  color: #FFFFFF !important;
-  padding: 0.25rem 0.75rem !important;
-  border-radius: 20px !important;
-  font-size: 0.875rem !important;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .project-links {
-  display: flex !important;
-  gap: 1rem !important;
+  display: flex;
+  gap: 1rem;
 }
 
 .btn-primary {
-  background-color: #007BFF !important;
-  border: none !important;
-  color: #FFFFFF !important;
-  padding: 0.75rem 1.5rem !important;
-  font-size: 1rem !important;
-  border-radius: 5px !important;
-  cursor: pointer !important;
-  transition: background-color 0.3s ease !important;
+  background-color: #007BFF;
+  border: none;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3 !important;
+  background-color: #0056b3;
 }
 
 .btn-outline-primary {
-  background-color: transparent !important;
-  border: 2px solid #007BFF !important;
-  color: #007BFF !important;
-  padding: 0.75rem 1.5rem !important;
-  font-size: 1rem !important;
-  border-radius: 5px !important;
-  cursor: pointer !important;
-  transition: background-color 0.3s ease, color 0.3s ease !important;
+  background-color: transparent;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-outline-primary:hover {
-  background-color: #007BFF !important;
-  color: #FFFFFF !important;
+  background-color: #007BFF;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
+  .projects {
+    padding: 3rem 0;
+  }
+
   .projects-title {
-    font-size: 2rem !important;
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .project-title {
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
   }
 
   .project-description {
-    font-size: 0.875rem !important;
+    font-size: 0.875rem;
   }
 
   .project-links {
-    flex-direction: column !important;
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 1.75rem;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-technologies li {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
   }
 }

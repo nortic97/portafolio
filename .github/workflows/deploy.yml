@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -27,11 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build application
         run: npm run build
 
-      # GitHub Pages necesita index.html también como 404.html
-      # para que Angular pueda manejar las rutas.
       - name: Prepare SPA fallback
         run: cp dist/portafolio/browser/index.html dist/portafolio/browser/404.html
 
