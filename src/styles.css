@@ -1,15 +1,29 @@
-body{
-  background-color: #1A1A2E !important;
-  overflow: auto !important;
-  -ms-overflow-style: none !important;
+body {
+  background-color: #F8FAFC;
+  overflow: auto;
+  -ms-overflow-style: none;
 }
 
 html {
-  scroll-behavior: smooth !important;
-  scrollbar-width: none !important;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 #F1F5F9;
 }
 
 ::-webkit-scrollbar {
-  display: none !important;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
 }
 

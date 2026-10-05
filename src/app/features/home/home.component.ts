@@ -43,13 +43,12 @@ export class HomeComponent implements AfterViewInit{
   }
 
   checkScroll() {
-    const scrollPosition = window.scrollY + window.innerHeight;
-    const pageHeight = document.documentElement.scrollHeight;
+    const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= pageHeight - 50) {
-      this.scrollIndicator.nativeElement.style.opacity = '0';
+    if (scrollPosition > 100) {
+      this.scrollIndicator.nativeElement.classList.add('hidden');
     } else {
-      this.scrollIndicator.nativeElement.style.opacity = '1';
+      this.scrollIndicator.nativeElement.classList.remove('hidden');
     }
   }
 

@@ -1,76 +1,95 @@
 .about {
-  padding: 4rem 0 !important;
-  background-color: #1A1A2E !important;
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);
 }
 
-.about-title {
-  font-size: 2.5rem !important;
-  font-weight: bold !important;
-  color: #FFFFFF !important;
-  margin-bottom: 2rem !important;
-  text-align: center !important;
+.about-title\n  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #FE4300, #FF6B35);
+  margin: 1rem auto 0;
+  border-radius: 2px;
 }
 
 .about-section {
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
 }
 
 .section-title {
-  font-size: 1.75rem !important;
-  font-weight: bold !important;
-  color: #00FFD1 !important;
-  margin-bottom: 1rem !important;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #FE4300;
+  margin-bottom: 1rem;
 }
 
 .section-text {
-  font-size: 1rem !important;
-  color: #A8A8A8 !important;
-  line-height: 1.6 !important;
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.7;
 }
 
 .section-list {
-  list-style-type: disc !important;
-  margin-left: 1.5rem !important;
-  color: #A8A8A8 !important;
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: #64748B;
 }
 
 .section-list li {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem;
 }
 
 .skills-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-  gap: 2rem !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .skill-category h4 {
-  font-size: 1.25rem !important;
-  font-weight: bold !important;
-  color: #00FFD1 !important;
-  margin-bottom: 1rem !important;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FE4300;
+  margin-bottom: 1rem;
 }
 
 .skill-category ul {
-  list-style-type: none !important;
-  padding: 0 !important;
-  color: #A8A8A8 !important;
+  list-style-type: none;
+  padding: 0;
+  color: #64748B;
 }
 
 .skill-category ul li {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(254, 67, 0, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #FE4300;
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
+
   .about-title {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .section-title {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 
   .skills-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 }

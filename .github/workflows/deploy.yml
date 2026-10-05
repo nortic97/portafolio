@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build application
-        run: npm run build
+        run: npm run build -- --configuration=production --base-href=/
 
       - name: Prepare SPA fallback
         run: cp dist/portafolio/browser/index.html dist/portafolio/browser/404.html

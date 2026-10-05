@@ -1,26 +1,70 @@
 .navbar {
-  padding: 1rem 0 !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  background-color: #0D1117 !important;
+  padding: 1rem 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #E2E8F0;
 }
 
 .navbar-brand {
-  font-size: 1.5rem !important;
-  font-weight: bold !important;
-  color: #FFFFFF !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1E293B;
+  background: linear-gradient(90deg, #FE4300, #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
 }
 
 .nav-link {
-  font-size: 1rem !important;
-  margin-left: 1rem !important;
-  color: #A8A8A8 !important;
-transition: color 0.3s ease !important;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  color: #64748B;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FE4300, #FF6B35);
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #00FFD1 !important;
+  color: #FE4300;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .active {
-  color: #00FFD1 !important;
+  color: #1E293B !important;
+  font-weight: 600;
+}
+
+.active:hover {
+  color: #1E293B !important;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #FE4300, #FF6B35);
 }
