@@ -30,6 +30,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      # GitHub Pages necesita index.html también como 404.html
+      # para que Angular pueda manejar las rutas.
+      - name: Prepare SPA fallback
+        run: cp dist/portafolio/browser/index.html dist/portafolio/browser/404.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -39,11 +44,12 @@ jobs:
           path: dist/portafolio/browser
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
 
     steps:
       - name: Deploy to GitHub Pages
